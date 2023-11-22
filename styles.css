@@ -154,7 +154,7 @@
   
   /*Service Section*/
   #services{
-    padding: 10%;
+    padding: 5% 10% 10% 10%;
   }
   .services-list {
     display: flex;
@@ -193,13 +193,13 @@
   
   /*Project Section*/
   #projects{
-    padding: 7% 10% 10% 10%;
+    padding: 5% 10% 0% 10%;
   }
   .work-list{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .work{
     border-radius: 10px;
@@ -272,7 +272,7 @@
   
   /*Contact Section*/
   #contact{
-    padding: 10%;
+    padding: 10% 10% 0% 10%;
   }
   .contact-left{
     flex-basis:   35%;
