@@ -410,6 +410,17 @@
       font-size: 14px;
     }
 }
+
+/*small screen Services section*/
+  #services{
+    padding: 5% 10% 10% 10%;
+  }
+  .services-list {
+    display: flex;
+    grid-template-rows: repeat(auto-fit, minmax(250, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
 #msg{
         color: #61b752;
         margin-top: -40px;
