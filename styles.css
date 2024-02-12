@@ -394,6 +394,11 @@
     /*services section*/
     .services-list {
     flex-direction: column;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
     }
     /*about me section*/
     .about-col-1{
