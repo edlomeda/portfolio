@@ -391,7 +391,10 @@
     .about-col-1, .about-col-2{
       flex-basis: 100%
     }
-    
+    /*services section*/
+    .services-list {
+    flex-direction: column;
+    }
     /*about me section*/
     .about-col-1{
       margin-bottom: 30px;
