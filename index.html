@@ -1,60 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ed Lomeda</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/Portfolio-Logo.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/33211d37c0.js" crossorigin="anonymous"></script>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>EdLomeda</title>
+        <link rel="stylesheet" href="https://edlomeda.github.io/portfolio/styles.css">
+        <link rel="icon" href="assets/Portfolio-Logo.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/33211d37c0.js" crossorigin="anonymous"></script>
+    </head>
+    
 <body>
-  <header id="header">
-    <nav id="navbar">
-      <img src="assets/Portfolio%20Logo.png" class="logo" alt="Portfolio Logo" width="80" height="80">
-      <ul id="sidemenu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button class="menu-close" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></button></li>
-      </ul>
-      <button class="menu-open" onclick="openmenu()"><i class="fa-solid fa-bars"></i></button>
-    </nav>
-    <div class="container">
-      <div class="header-text">
-        <p>Front-End Developer</p>
-        <h1>Hello, I'm <span>Ed</span></h1>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="assets/My%20Picture.png" id="user" alt="Ed Lomeda">
+        <!--Nav Section-->
+        <div id="header">
+          <nav id="navbar">
+            <img src="https://edlomeda.github.io/portfolio/assets/Portfolio%20Logo.png" class="logo" alt="Portfolio Logo" width="80" height="80">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+            </ul><i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="container">
+            <div class="header-text">
+              <p>Front-End Developer</p>
+              <h1>Hello, I'm <span>Ed</span><br></h1>
+            </div>
+          </div>
+        </div>
+        <!--About Section-->
+        <div id="about">
+          <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="https://edlomeda.github.io/portfolio/assets/My%20Picture.png" id="user" alt="My Picture">
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-              <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-              <p class="tab-links" onclick="opentab('education', event)">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web appDevelopment</li>
                 <li><span>App Development</span><br>Building Android/iOS Apps</li>
               </ul>
             </div>
-            <div class="tab-contents" id="experience">
+           <div class="tab-contents" id="experience">
               <ul>
                 <li><span>2021-Present</span><br>Freelance Web Developer</li>
                 <li><span>2016-Present</span><br>Service Desk Support</li>
@@ -62,110 +62,88 @@
                 <li><span>2010-2012</span><br>Scanner Operator</li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
+           <div class="tab-contents" id="education">
               <ul>
-                <li><span>Web Development</span><br>Online Bootcamps / Self-taught</li>
-                <li><span>UI/UX</span><br>Design Courses</li>
+                <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web appDevelopment</li>
+                <li><span>App Development</span><br>Building Android/iOS Apps</li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div class="service-item">
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>Responsive and modern web design for businesses and portfolios.</p>
-            <a href="#">Learn more</a>
-          </div>
-          <div class="service-item">
-            <i class="fa-solid fa-crop"></i>
-            <h2>UI/UX Design</h2>
-            <p>Design intuitive user experiences with focus on accessibility and usability.</p>
-            <a href="#">Learn more</a>
-          </div>
-          <div class="service-item">
-            <i class="fa-brands fa-app-store"></i>
-            <h2>App Design</h2>
-            <p>Cross-platform app UI design for iOS and Android.</p>
-            <a href="#">Learn more</a>
-          </div>
         </div>
       </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="assets/work-1.png" alt="Social Media App">
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>Social sharing and user interaction features.</p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="assets/work-2.png" alt="Music App">
-            <div class="layer">
-              <h3>Music App</h3>
-              <p>Streaming and playlist creation features.</p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="assets/work-3.png" alt="Shopping App">
-            <div class="layer">
-              <h3>Online Shopping App</h3>
-              <p>Product browsing and secure checkout flow.</p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        <!--Services Section-->
+        <div id="services">
+          <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+              <div><i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in semper tellus, vitae auctor nisl. Mauris arcu dui, condimentum eu diam consectetur, sodales molestie felis.</p>
+                <a href="#">Learn more</a>
+              </div>
+              <div><i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in semper tellus, vitae auctor nisl. Mauris arcu dui, condimentum eu diam consectetur, sodales molestie felis.</p>
+                <a href="#">Learn more</a>
+              </div>
+              <div><i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in semper tellus, vitae auctor nisl. Mauris arcu dui, condimentum eu diam consectetur, sodales molestie felis.</p>
+                <a href="#">Learn more</a>
+              </div>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See more</a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p id="contact-email"><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
-            <p id="contact-phone"><i class="fa-solid fa-phone"></i> 123-456-7890</p>
-            <div class="social-icons">
-              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <!--Portfolio Section-->
+        <div id="projects">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list project-tile">
+              <div class="work"><img src="https://edlomeda.github.io/portfolio/assets/work-1.png" alt="work 1">
+                <div class="layer"><h3>Social Media App</h3><p>Sample Textfor Social Media App</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work"><img src="https://edlomeda.github.io/portfolio/assets/work-2.png" alt="work 2">
+                <div class="layer"><h3>Music App</h3><p>Sample Textfor Social Media App</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div></div>
+              <div class="work"><img src="https://edlomeda.github.io/portfolio/assets/work-3.png" alt="work 3">
+                <div class="layer"><h3>Online shopping App</h3><p>Sample Textfor Social Media App</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div></div>
             </div>
-            <a href="#" download class="btn btn2">Download CV</a>
+            <a href="#" class="btn">see more</a> 
+        </div>
+        <!--Contact Section-->
+        <div id="contact">
+          <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p id="contact-email"><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+              <p id="contact-phone"><i class="fa-solid fa-phone"></i> 123457686970</p>
+              <div class="social-icons">
+               <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <a href="" download class="btn btn2" id="btn2">Download CV</a>
+      </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" id="submit" class="btn btn2">submit</button>
+              </form>
+              <span id="msg"></span> 
           </div>
-
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required aria-label="Your Name">
-              <input type="email" name="Email" placeholder="Your Email" required aria-label="Your Email">
-              <textarea name="Message" rows="6" placeholder="Your Message" aria-label="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="copyright">
-    <p>© 2025 Ed Lomeda. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="https://edlomeda.github.io/portfolio/script.js"></script>
 </body>
 </html>
